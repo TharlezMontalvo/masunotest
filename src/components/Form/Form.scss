@@ -1,0 +1,76 @@
+// Form.scss
+
+.form-container {
+  border: 2px solid #1111;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center; // Alinea el contenido al centro
+  align-items: center; // Alinea los elementos al centro verticalmente
+  justify-content: center;
+
+  .form-title {
+    color: #D43E36;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-field {
+    flex: 1;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    label, .placeholder {
+      display: block;
+      margin-bottom: 5px;
+      text-align: left;
+      color: #B7B1A9;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: 1px solid #B7B1A9;
+      font-family: 'Open Sans', sans-serif; 
+    }
+
+    .captcha-image {
+      height: 30px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+      align-self: flex-start;
+    }
+  }
+
+  .register-button {
+    background-color: #1A36A8; // Color de fondo azul
+    color: #fff; // Texto blanco
+    padding: 10px 20px; // Ajusta el relleno según sea necesario
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .p{
+    color: #595959;
+  }
+}
