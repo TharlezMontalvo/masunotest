@@ -97,7 +97,6 @@ const Form = () => {
 
       <Captcha />
 
-       {/* Nueva fila con caja de verificación */}
        <div className="form-row">
         <div className="form-field">
           <input type="checkbox" id="terminos" name="terminos" />
@@ -105,7 +104,6 @@ const Form = () => {
         </div>
       </div>
 
-      {/* Nueva fila con otra caja de verificación */}
       <div className="form-row">
         <div className="form-field">
           <input type="checkbox" id="usoDatos" name="usoDatos" />
@@ -113,7 +111,6 @@ const Form = () => {
         </div>
       </div>
 
-      {/* Nueva fila con botón de registro y párrafo */}
       <div className="form-row">
         <button className="register-button">Registrarme</button>
       </div>

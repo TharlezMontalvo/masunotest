@@ -1,0 +1,24 @@
+.Divider {
+    text-align: center;
+    padding: 20px;
+    .top-row {
+        display: flex;
+        align-items: center;
+        
+        .blue-line {
+        border-top: 3px solid blue;
+        flex: 1;
+        height: 2px;
+        }
+
+        .image-container {
+        margin: 0 30px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        }
+    }
+
+}
