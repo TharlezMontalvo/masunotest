@@ -2,42 +2,52 @@
     text-align: left;
     color: white;
     background-color: #1A36A8;
-    padding: 20px;
+    padding: 30px;
+    font-weight: bold;
+    margin: 0;
   
     .top-section {
       display: flex;
-      align-items: left;
-      flex-direction: column;
-      margin-bottom: 20px;
-  
-      .centered-image {
-        flex: 1;
-        width: 100px; // Ajusta el ancho según tus necesidades
-        height: auto; // Ajusta la altura según tus necesidades
-      }
-  
-      .white-text {
-        
-        color: white;
-        font-size: 18px; // Ajusta el tamaño del texto según tus necesidades
-        margin-top: 10px; // Ajusta el margen superior según tus necesidades
-      }
+      align-items: center;
     }
-  
-    .white-bold-text {
-      font-weight: bold;
-      font-size: 24px; // Ajusta el tamaño del texto según tus necesidades
-      margin-bottom: 15px; // Ajusta el margen inferior según tus necesidades
+    
+    .centered-image {
+      margin-right: 10px;
+    }
+    
+    .text-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .first-line {
+      font-size: 25px;
+      margin: 0;
+    }
+    .second-line {
+      font-size: 50px;
+      margin: 0;
     }
   
     .more-one {
       display: flex;
       flex-direction: column;
-  
-      img {
-        width: 50px; // Ajusta el ancho según tus necesidades
-        height: auto; // Ajusta la altura según tus necesidades
+      .third-line{
+        font-size: 50px;
+        margin: 0;
+        .small-text{
+          font-size: 30px;
+        }
       }
+      img {
+        width: 200px;
+        height: 20px; 
+        margin: 0 0 10px 50px;
+      }
+      
+    }
+    .last-line{
+      font-size: 25px;
+      margin: 0;
     }
   }
   

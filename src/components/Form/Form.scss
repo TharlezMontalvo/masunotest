@@ -1,9 +1,9 @@
 
 .form-container {
   border: 2px solid #1111;
-  padding: 15px;
-  margin-bottom: 20px;
-  text-align: center;
+  padding: 25px;
+  margin: 15px;
+  text-align: left;
   align-items: center; 
   justify-content: center;
   background-color: white;
@@ -11,16 +11,18 @@
 
   .form-title {
     color: #D43E36;
-    border-bottom: 2px solid #3498db;
     margin-bottom: 10px;
     padding-bottom: 5px;
     text-align: left;
+    font-size: 20px;
   }
 
   .form-row {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
 
     &:last-child {
       margin-bottom: 0;
@@ -61,17 +63,34 @@
       align-self: flex-start;
     }
   }
-
+  .center-button {
+    display: flex;
+    justify-content: center;
+    margin:auto;
+  }
+  .checkbox-field {
+    display: flex;
+    align-items: center;
+  }
   .register-button {
-    background-color: #1A36A8; // Color de fondo azul
-    color: #fff; // Texto blanco
-    padding: 10px 20px; // Ajusta el relleno según sea necesario
+    background-color: #1A36A8;
+    color: #fff; 
+    padding: 20px 60px; 
     border: none;
     border-radius: 10px;
     cursor: pointer;
   }
 
-  .p{
-    color: #595959;
+  .offers-paragraph{
+    color: #B7B1A9;
+    font-size: 15px;
+    padding: 5px 10px;
+
+      .red-text {
+        color: #D43E36;
+        font-weight: bold;
+      }
   }
+
+  
 }

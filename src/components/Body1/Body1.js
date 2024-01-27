@@ -1,4 +1,3 @@
-// Section.js
 import React from 'react';
 import './Body1.scss';
 import subrayado from '../../img/Subrayado Rojo.png'
@@ -9,14 +8,16 @@ const Body1 = () => {
     <div className="Body1">
       <div className="top-section">
         <img src={Body} alt="Imagen" className="centered-image" />
-        <p className="white-text">Es hora de</p>
+        <div className="text-container">
+          <p className="first-line">ES HORA DE </p>
+        </div>
       </div>
-      <p className="white-bold-text">CYBER DAYS</p>
       <div className="more-one">
-        <p>EN Más uno</p>
-        <img src={subrayado} alt="Otra imagen" />
+        <p className="second-line">CYBER DAYS</p>
+        <p className="third-line"><span className="small-text">EN</span>  Más uno</p>
+        <img src={subrayado} alt="subrayado" />
       </div>
-      <p>Del 28 al 30 de marzo</p>
+      <p className="last-line">Del 28 al 30 de marzo</p>
     </div>
   );
 };
