@@ -1,6 +1,6 @@
 .combined-container {
   display: flex;
-  flex-direction: column; /* Por defecto, en dispositivos más pequeños, mostrará las columnas apiladas */
+  flex-direction: column; 
   background-color: #1A36A8;
 }
 
@@ -18,6 +18,6 @@
 
 @media (min-width: 768px) {
   .combined-container {
-    flex-direction: row; /* Cambia a disposición de fila en pantallas más grandes */
+    flex-direction: row; 
   }
 }

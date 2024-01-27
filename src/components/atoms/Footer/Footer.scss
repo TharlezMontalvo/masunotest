@@ -1,70 +1,77 @@
 .footer {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  background-color: #1A36A8;
+  color: #FFFFFF;
+  padding: 50px;
+  font-size: 15px;
+
+  .column {
     display: flex;
-    justify-content: space-around;
-    background-color: #1A36A8;
-    color: #FFFFFF;
-    padding: 50px;
-    font-size: 10px;
-  
-    .column {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: left;
-  
-      .logo-container {
-        margin-bottom: 10px;
-      }
-  
-      .company-name {
-        font-weight: bold;
-      }
-  
-      h2 {
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-  
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: left;
-  
-        li {
-          margin-bottom: 5px;
-        }
-      }
-  
-      .contact-info {
-        display: flex;
-        align-items: center;
-  
-        p {
-          margin-left: 5px;
-        }
-      }
-  
-      .social-icons {
-        display: flex;
-  
-        svg {
-          margin: 0 5px;
-          font-size: 1.5em;
-        }
-      }
-    }
-  
-    .copyright {
-      text-align: center;
-      margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 20px; 
+
+    .logo-container {
+      margin-bottom: 10px;
     }
 
-    @media only screen and (min-width: 768px) {
-      /* Consulta de medios para pantallas más grandes (ajusta según sea necesario) */
-      .column {
-        flex: 0 0 calc(33.333% - 20px); /* Hace que cada columna ocupe alrededor de un tercio del ancho en pantallas más grandes */
+    .company-name {
+      font-weight: bold;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+
+      li {
+        margin-bottom: 8px;
+        font-weight: none;
+      }
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-left: 5px;
+      }
+    }
+
+    .social-icons {
+      display: flex;
+
+      svg {
+        margin: 0 5px;
+        font-size: 1.5em;
       }
     }
   }
-  
+
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .column {
+      flex: 1 0 100%; 
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .column {
+      flex: 0 0 calc(33.333% - 20px); 
+    }
+  }
+}
