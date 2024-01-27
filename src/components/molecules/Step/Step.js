@@ -1,15 +1,27 @@
 import React from 'react';
+import { useSpring, animated } from 'react-spring';
+import { useInView } from 'react-intersection-observer';
 import './Step.scss';
-import subrayado from '../../../img/Subrayado Rojo.png'
-import circle1 from '../../../img/Paso1.png'
-import circle2 from '../../../img/Paso2.png'
-import circle3 from '../../../img/Paso3.png'
-
+import subrayado from '../../../img/Subrayado Rojo.png';
+import circle1 from '../../../img/Paso1.png';
+import circle2 from '../../../img/Paso2.png';
+import circle3 from '../../../img/Paso3.png';
 
 const Step = () => {
-  return (
-    <div className="step-container">
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
+  const stepContainerAnimation = useSpring({
+    opacity: inView ? 1 : 0,
+    transform: inView ? 'translateY(0%)' : 'translateY(50px)',
+    from: { opacity: 0, transform: 'translateY(50px)' },
+    config: { tension: 300, friction: 20 },
+  });
+
+  return (
+    <animated.div className="step-container" style={stepContainerAnimation} ref={ref}>
       <div className="section">
         <h1 className="section-title">¿Cómo obtengo el descuento por Cyber Days?</h1>
         <div className="section-image">
@@ -30,7 +42,7 @@ const Step = () => {
             <img src={circle1} alt="Imagen del paso 1" />
           </div>
           <p className="step-text">Regístrate</p>
-          <p>Completa el formulario con tus datos personales y acepta los términos.</p>
+          <p className="p-text">Completa el formulario con tus datos personales y acepta los términos.</p>
         </div>
 
         <div className="step">
@@ -39,7 +51,7 @@ const Step = () => {
             <img src={circle2} alt="Imagen del paso 2" />
           </div>
           <p className="step-text">Recibe un cupón</p>
-          <p>Recibirás un correo electrónico donde podrás ver el cupón de descuento.</p>
+          <p className="p-text">Recibirás un correo electrónico donde podrás ver el cupón de descuento.</p>
         </div>
 
         <div className="step">
@@ -48,10 +60,10 @@ const Step = () => {
             <img src={circle3} alt="Imagen del paso 3" />
           </div>
           <p className="step-text">Empieza a ahorrar</p>
-          <p>¡Y listo! Podrás usarlo del 28 al 30 de Marzo por compras en nuestra tienda online.</p>
+          <p className="p-text">¡Y listo! Podrás usarlo del 28 al 30 de Marzo por compras en nuestra tienda online.</p>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 

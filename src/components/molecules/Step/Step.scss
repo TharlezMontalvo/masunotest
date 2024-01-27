@@ -19,7 +19,7 @@
     }
   
     .section-title2 {
-      color: grey;
+      color: #B7B1A9;
   
       .red-text {
         color: red;
@@ -33,7 +33,7 @@
       .step {
         flex: 1;
         margin: 0;
-  
+        
         .step-title {
           color: blue;
           font-weight: bold;
@@ -62,6 +62,10 @@
           font-weight: bold;
           margin: 0;
           font-size: 25px;
+        }
+
+        .p-text{
+          color: #B7B1A9;
         }
       }
     }

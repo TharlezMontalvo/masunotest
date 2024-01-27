@@ -32,7 +32,7 @@ const Carousel = () => {
             <div className="text-content">
               <img src={star} alt="Imagen 1" className="star-image" />
               <h2 className="title">PHP</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p className="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <button className="ver-button">Ver Tecnología</button>
             </div>
             <div className="slide-indicators">
@@ -51,7 +51,7 @@ const Carousel = () => {
             <div className="text-content">
               <img src={star} alt="Imagen 2" className="star-image" />
               <h2 className="title">Flutter</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p className="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <button className="ver-button">Ver Tecnología</button>
             </div>
             <div className="slide-indicators">
@@ -70,7 +70,7 @@ const Carousel = () => {
             <div className="text-content">
               <img src={star} alt="Imagen 3" className="star-image" />
               <h2 className="title">Diseño UX/UI</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p className="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <button className="ver-button">Ver Tecnología</button>
             </div>
             <div className="slide-indicators">
