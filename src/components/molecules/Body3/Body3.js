@@ -1,7 +1,7 @@
 import React from 'react';
 import './Body3.scss'; 
-import logo2 from '../../img/Logo2.png'
-import subrayado from '../../img/Subrayado Rojo.png'
+import logo2 from '../../../img/Logo2.png'
+import subrayado from '../../../img/Subrayado Rojo.png'
 
 const Body3 = () => {
   return (

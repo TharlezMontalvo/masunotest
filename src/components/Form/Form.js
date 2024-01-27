@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import './Form.scss';
-import Captcha from '../atoms/Captcha/captcha';
+import { FaUndo } from 'react-icons/fa';
 import subrayado from '../../img/Subrayado Azul.png'
 import sello from '../../img/Sello.png'
-
+import captcha from '../../img/captcha.jpg'
 
 const Form = () => {
   const [placeholders, setPlaceholders] = useState({
-    nombres: 'Ingresa tus nombres',
+    nombres: 'Ingrese tus nombres',
     apellidos: 'Ingrese tus apellidos',
     telefono: 'Ingrese tu número de teléfono',
     correo: 'Ingrese tu correo electrónico',
-    captcha: 'Ingrese el código captcha',
+    captcha: 'Ingrese captcha',
   });
 
   const handleInputClick = (fieldName) => {
@@ -38,13 +38,13 @@ const Form = () => {
           <img src={subrayado} alt="Imagen del subrayado" />
         </div>
       <div className="corner-image">
-          <img src={sello}alt="Other Image" className="centered-image" />
+          <img src={sello} alt="Sign" className="centered-image" />
       </div>
       </div>
 
       <div className="form-row">
         <div className="form-field">
-          <label htmlFor="nombres">Nombres *</label>
+          <label htmlFor="nombres">Nombres <span className="red-text">*</span></label>
           <input
             type="text"
             id="nombres"
@@ -55,7 +55,7 @@ const Form = () => {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="apellidos">Apellidos *</label>
+          <label htmlFor="apellidos">Apellidos <span className="red-text">*</span></label>
           <input
             type="text"
             id="apellidos"
@@ -69,7 +69,7 @@ const Form = () => {
 
       <div className="form-row">
         <div className="form-field">
-          <label htmlFor="telefono">Teléfono Celular *</label>
+          <label htmlFor="telefono">Teléfono Celular <span className="red-text">*</span></label>
           <input
             type="tel"
             id="telefono"
@@ -80,7 +80,7 @@ const Form = () => {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="correo">Correo Electrónico *</label>
+          <label htmlFor="correo">Correo Electrónico <span className="red-text">*</span></label>
           <input
             type="email"
             id="correo"
@@ -101,7 +101,22 @@ const Form = () => {
             <option value="opcion3">Embutidos</option>
           </select>
         </div>
-        <Captcha />
+        <div className="form-field">
+          <div className="captcha-container">
+            <img src={captcha} alt="Captcha" className="captcha-image" />
+            <button type="button" className="reload-button">
+              <FaUndo  />
+            </button>
+            <input
+              type="text"
+              id="captchaInput"
+              name="captchaInput"
+              placeholder={placeholders.captcha}
+              onClick={() => handleInputClick('Captcha')}
+              onBlur={() => handleInputBlur('Captcha')}
+            />
+          </div>
+        </div>
       </div>
       
       <div className="check-row ">

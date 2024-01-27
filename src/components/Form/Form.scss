@@ -37,7 +37,7 @@
     &:last-child {
       margin-right: 0;
     }
-
+    
     label, .placeholder {
       display: block;
       margin-bottom: 5px;
@@ -95,11 +95,6 @@
     color: #B7B1A9;
     font-size: 15px;
     padding: 5px 10px;
-
-      .red-text {
-        color: #D43E36;
-        font-weight: bold;
-      }
   }
 
   .corner-image {
@@ -108,5 +103,26 @@
     right: 0;
     transform: translateY(-50%);
   }
- 
+  .red-text {
+    color: #D43E36;
+    font-weight: bold;
+  }
+  .captcha-container {
+
+    align-items: baseline;
+      .captcha-image{
+        height: 50px;
+        width: 200px;
+      }
+
+      .reload-button{
+        background-color: #1A36A8;
+        color: #fff;
+        border-radius: 5px;
+        margin-left: 5px;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      }
+  }
 }

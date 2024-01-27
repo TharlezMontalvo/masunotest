@@ -1,14 +1,14 @@
 import React from 'react';
-import './Body2.scss';
-import subrayado from '../../img/Subrayado Rojo.png'
-import circle1 from '../../img/Paso1.png'
-import circle2 from '../../img/Paso2.png'
-import circle3 from '../../img/Paso3.png'
+import './Step.scss';
+import subrayado from '../../../img/Subrayado Rojo.png'
+import circle1 from '../../../img/Paso1.png'
+import circle2 from '../../../img/Paso2.png'
+import circle3 from '../../../img/Paso3.png'
 
 
-const Body2 = () => {
+const Step = () => {
   return (
-    <div className="body2">
+    <div className="step-container">
 
       <div className="section">
         <h1 className="section-title">¿Cómo obtengo el descuento por Cyber Days?</h1>
@@ -55,4 +55,4 @@ const Body2 = () => {
   );
 };
 
-export default Body2;
+export default Step;
