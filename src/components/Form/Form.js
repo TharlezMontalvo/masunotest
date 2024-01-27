@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Form.scss';
 import Captcha from './captcha';
 import subrayado from '../../img/Subrayado Azul.png'
+import sello from '../../img/Sello.png'
 
 
 const Form = () => {
@@ -36,6 +37,9 @@ const Form = () => {
       <div className="section-image">
           <img src={subrayado} alt="Imagen del subrayado" />
         </div>
+      <div className="corner-image">
+          <img src={sello}alt="Other Image" className="centered-image" />
+      </div>
       </div>
 
       <div className="form-row">

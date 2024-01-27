@@ -1,6 +1,6 @@
 import React from 'react';
 import './Divider.scss';
-import divider from '../../img/Divider.png'
+import divider from '../../../img/Divider.png'
 
 const Divider = () => {
   return (

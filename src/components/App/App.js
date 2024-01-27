@@ -1,11 +1,11 @@
 import './App.scss';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import Divider from '../Divider/Divider';
+import Header from '../atoms/Header/Header';
+import Footer from '../atoms/Footer/Footer';
+import Divider from '../atoms/Divider/Divider';
 import Body2 from '../Body2/Body2';
 import Body3 from '../Body3/Body3';
-import Carrusel from '../Carrusel/Carrusel';
-import Bodies from '../Bodies/Bodies';
+import Carrusel from '../molecules/Carrusel/Carrusel';
+import Bodies from '../organisms/Bodies/Bodies';
 
 
 function App() {

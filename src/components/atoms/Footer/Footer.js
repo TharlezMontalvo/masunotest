@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.scss';
-import logo from '../../img/Logo.png'
-import libro from '../../img/libroreclamaciones 1.png'
+import logo from '../../../img/Logo.png'
+import libro from '../../../img/libroreclamaciones 1.png'
 
 import { FaPhone, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 

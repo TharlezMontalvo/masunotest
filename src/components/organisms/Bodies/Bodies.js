@@ -1,7 +1,7 @@
 import React from 'react';
-import Anuncio from '../Anuncio/Anuncio';
-import Body1 from '../Body1/Body1';
-import Form from '../Form/Form';
+import Anuncio from '../../molecules/Anuncio/Anuncio';
+import Body1 from '../../Body1/Body1';
+import Form from '../../Form/Form';
 import './Bodies.scss';
 
 const Bodies = () => {

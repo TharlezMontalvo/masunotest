@@ -1,36 +1,33 @@
 .anuncio-container {
     background-color: white;
-    margin: 30px;
+    margin: 0 30px 30px 30px;
+    padding: 20px;
 
   .second-container{
     border: 2px dashed #003383;
     padding: 10px;
+    border-radius: 10px;
     .fila {
       width: 100%;
     }
   
-    .section {
-        margin: 0;
-    
+    .section {    
         .section-title {
           color: #DB0FA8;
-          font-size: 50px;
+          font-size: 40px;
           margin: 0;
         }
     
         .section-image {
-          margin: 0;
           img {
-            max-width: 100%;
+            max-width: 70%;
             height: auto;
-            margin: 0;
           }
         }
       }
     .fila-3 {
         display: flex;
         height: 50%;
-        margin: 0;
       .columna {
         flex: 1;
         margin: 0;
@@ -40,14 +37,16 @@
         margin: 0;
         .porcentaje {
           color: #DB0FA8;
-          text-shadow: 2px 2px 5px yellow;
+          text-shadow: 2px 2px 5px #E27C1E;
           font-size: 100px;
           margin: 0;
         }
       }
       .derecha {
-        text-align: center;
-        font-size: 27px;
+        text-align: left;
+        font-size: 35px;
+        font-weight: bold;
+        color: #003383;
         margin: 0;
         .cyber-days {
           color: #DB0FA8;
@@ -61,14 +60,7 @@
     .fila-6 {
       text-align: center;
       color: #003383;
-    }
-  
-    .icono-tijera-rectangulo {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      color: #003383;
-      font-size: 24px;
+      margin: 0;
     }
   
     }

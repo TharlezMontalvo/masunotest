@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Carrusel.scss';
-import slide1 from '../../img/Slide1.png';
-import slide2 from '../../img/Slide2.png';
-import slide3 from '../../img/Slide3.png';
-import star from '../../img/star.png';
+import slide1 from '../../../img/Slide1.png';
+import slide2 from '../../../img/Slide2.png';
+import slide3 from '../../../img/Slide3.png';
+import star from '../../../img/star.png';
 
 const Carrusel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

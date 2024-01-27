@@ -1,6 +1,6 @@
 import React from 'react';
 import './Anuncio.scss';
-import subrayado from '../../img/Subrayado Rojo.png'
+import subrayado from '../../../img/Subrayado Rojo.png'
 
 
 const Anuncio = () => {

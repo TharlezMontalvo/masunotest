@@ -8,6 +8,7 @@
   justify-content: center;
   background-color: white;
   border-radius: 10px;
+  position: relative;
 
   .form-title {
     color: #D43E36;
@@ -92,5 +93,11 @@
       }
   }
 
-  
+  .corner-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
 }
