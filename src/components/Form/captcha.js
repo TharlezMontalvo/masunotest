@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Refresh as RefreshIcon } from '@mui/icons-material';
 import Button from '@mui/material/Button';
+import captcha from '../../img/captcha.jpg'
+
 
 const generateCaptchaText = () => {
   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -32,7 +34,7 @@ const Captcha = () => {
 
   return (
     <div className="captcha-container">
-      <img src="../../img/captcha.jpg" alt="Captcha" className="captcha-image" />
+      <img src={captcha} alt="Captcha" className="captcha-image" />
       <Button
           variant="contained"
           color="primary"

@@ -1,0 +1,43 @@
+.Body1 {
+    text-align: left;
+    color: white;
+    background-color: #1A36A8;
+    padding: 20px;
+  
+    .top-section {
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      margin-bottom: 20px;
+  
+      .centered-image {
+        flex: 1;
+        width: 100px; // Ajusta el ancho según tus necesidades
+        height: auto; // Ajusta la altura según tus necesidades
+      }
+  
+      .white-text {
+        
+        color: white;
+        font-size: 18px; // Ajusta el tamaño del texto según tus necesidades
+        margin-top: 10px; // Ajusta el margen superior según tus necesidades
+      }
+    }
+  
+    .white-bold-text {
+      font-weight: bold;
+      font-size: 24px; // Ajusta el tamaño del texto según tus necesidades
+      margin-bottom: 15px; // Ajusta el margen inferior según tus necesidades
+    }
+  
+    .more-one {
+      display: flex;
+      flex-direction: column;
+  
+      img {
+        width: 50px; // Ajusta el ancho según tus necesidades
+        height: auto; // Ajusta la altura según tus necesidades
+      }
+    }
+  }
+  

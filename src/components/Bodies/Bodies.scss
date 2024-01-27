@@ -1,0 +1,25 @@
+// CombinedComponent.scss
+.combined-container {
+    display: flex;
+    background-color: #1A36A8;
+  }
+  
+  .left-column {
+    flex: 1; /* Ocupa todo el espacio disponible en la izquierda */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-column {
+    flex: 1; /* Ocupa todo el espacio disponible en la derecha */
+    padding: 20px; /* Ajusta el espacio según tus necesidades */
+  }
+  
+  .first-row {
+    flex: 1; /* Ocupa la mitad del espacio disponible en la izquierda */
+  }
+  
+  .second-row {
+    flex: 1; /* Ocupa la otra mitad del espacio disponible en la izquierda */
+  }
+  
