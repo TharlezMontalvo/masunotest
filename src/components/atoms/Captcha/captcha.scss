@@ -1,0 +1,25 @@
+.captcha-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+  }
+  
+  .captcha-image {
+    width: 300000px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin-right: 10px; /* Ajusta el margen según tus necesidades */
+  }
+  
+  .captcha-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-field {
+    margin-right: 10px; /* Ajusta el margen según tus necesidades */
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px; /* Ajusta el margen superior según tus necesidades */
+  }
+  

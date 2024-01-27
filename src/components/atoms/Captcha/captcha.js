@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Refresh as RefreshIcon } from '@mui/icons-material';
 import Button from '@mui/material/Button';
-import captcha from '../../img/captcha.jpg'
+import captcha from '../../../img/captcha.jpg'
 
 
 const generateCaptchaText = () => {
@@ -27,32 +27,31 @@ const Captcha = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Lógica de validación del captcha
     const isValid = userInput.toLowerCase() === captchaText.toLowerCase();
     setIsCaptchaValid(isValid);
   };
 
   return (
     <div className="captcha-container">
-      <img src={captcha} alt="Captcha" className="captcha-image" />
-      <Button
-          variant="contained"
-          color="primary"
-          onClick={handleRefreshCaptcha}
-          startIcon={<RefreshIcon />}
-          style={{ backgroundColor: '#1A36A8' }}
-        ></Button>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={userInput}
-          onChange={handleInputChange}
-          placeholder="Ingrese captcha"
-        />
-        
-      </form>
-      {!isCaptchaValid && <p className="error-message">Texto incorrecto del Captcha</p>}
-    </div>
+    <img src={captcha} alt="Captcha" className="captcha-image" />
+    <Button
+      variant="contained"
+      color="primary"
+      onClick={handleRefreshCaptcha}
+      startIcon={<RefreshIcon />}
+      style={{ backgroundColor: '#1A36A8' }}
+    ></Button>
+    <form className="captcha-form" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={userInput}
+        onChange={handleInputChange}
+        placeholder="Ingrese captcha"
+        className="input-field"
+      />
+    </form>
+    {!isCaptchaValid && <p className="error-message">Texto incorrecto del Captcha</p>}
+  </div>
   );
 };
 

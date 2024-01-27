@@ -1,7 +1,7 @@
 
 .form-container {
   border: 2px solid #1111;
-  padding: 25px;
+  padding: 30px;
   margin: 15px;
   text-align: left;
   align-items: center; 
@@ -55,10 +55,6 @@
       font-family: 'Open Sans', sans-serif; 
     }
 
-    .captcha-image {
-      height: 30px;
-    }
-
     input[type="checkbox"] {
       margin-right: 5px;
       align-self: flex-start;
@@ -69,17 +65,30 @@
     justify-content: center;
     margin:auto;
   }
-  .checkbox-field {
-    display: flex;
-    align-items: center;
+
+  .check-row{  
+    text-align: left;
+    color: #B7B1A9;
+    .checkbox-field {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      .blue-text {
+        color: #1A36A8;
+        font-weight: bold;
+      }
+      
+    }
   }
+  
   .register-button {
     background-color: #1A36A8;
     color: #fff; 
-    padding: 20px 60px; 
+    padding: 20px 80px; 
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 15px;
   }
 
   .offers-paragraph{
@@ -99,5 +108,5 @@
     right: 0;
     transform: translateY(-50%);
   }
-
+ 
 }

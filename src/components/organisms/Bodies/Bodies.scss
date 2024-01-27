@@ -1,24 +1,23 @@
 .combined-container {
-    display: flex;
-    background-color: #1A36A8;
+  display: flex;
+  flex-direction: column; /* Por defecto, en dispositivos más pequeños, mostrará las columnas apiladas */
+  background-color: #1A36A8;
+}
+
+.left-column, .right-column {
+  flex: 1;
+}
+
+.right-column {
+  padding: 20px;
+}
+
+.first-row, .second-row {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .combined-container {
+    flex-direction: row; /* Cambia a disposición de fila en pantallas más grandes */
   }
-  
-  .left-column {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .right-column {
-    flex: 1; 
-    padding: 20px; 
-  }
-  
-  .first-row {
-    flex: 1; 
-  }
-  
-  .second-row {
-    flex: 1; 
-  }
-  
+}

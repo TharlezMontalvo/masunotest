@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Form.scss';
-import Captcha from './captcha';
+import Captcha from '../atoms/Captcha/captcha';
 import subrayado from '../../img/Subrayado Azul.png'
 import sello from '../../img/Sello.png'
 
@@ -8,10 +8,10 @@ import sello from '../../img/Sello.png'
 const Form = () => {
   const [placeholders, setPlaceholders] = useState({
     nombres: 'Ingresa tus nombres',
-    apellidos: 'Ingresa tus apellidos',
-    telefono: 'Ingresa tu número de teléfono',
-    correo: 'Ingresa tu correo electrónico',
-    captcha: 'Ingresa el código captcha',
+    apellidos: 'Ingrese tus apellidos',
+    telefono: 'Ingrese tu número de teléfono',
+    correo: 'Ingrese tu correo electrónico',
+    captcha: 'Ingrese el código captcha',
   });
 
   const handleInputClick = (fieldName) => {
@@ -103,19 +103,18 @@ const Form = () => {
         </div>
         <Captcha />
       </div>
-
       
-      <div className="form-row ">
-        <div className="form-field checkbox-field">
+      <div className="check-row ">
+        <div className="checkbox-field">
           <input type="checkbox" id="terminos" name="terminos" />
-          <label htmlFor="terminos">Acepto los Términos y políticas de privacidad</label>
+          <label htmlFor="terminos">Acepto los <span className="blue-text">Términos y políticas de privacidad</span></label>
         </div>
       </div>
 
-      <div className="form-row">
-        <div className="form-field checkbox-field">
+      <div className="check-row">
+        <div className="checkbox-field">
           <input type="checkbox" id="usoDatos" name="usoDatos" />
-          <label htmlFor="usoDatos">Acepto el Uso de datos personales</label>
+          <label htmlFor="usoDatos">Acepto el <span className="blue-text">Uso de datos personales</span></label>
         </div>
       </div>
 
