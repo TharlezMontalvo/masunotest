@@ -1,4 +1,4 @@
-.Body1 {
+.FirstBlock {
     text-align: left;
     color: white;
     background-color: #1A36A8;
@@ -48,6 +48,23 @@
     .last-line{
       font-size: 25px;
       margin: 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+  
+      .top-section {
+        flex-direction: column;
+      }
+  
+      .centered-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+  
+      .text-container {
+        align-items: center;
+      }
     }
   }
   

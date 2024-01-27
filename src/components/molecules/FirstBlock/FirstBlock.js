@@ -3,9 +3,9 @@ import './FirstBlock.scss';
 import subrayado from '../../../img/Subrayado Rojo.png'
 import Body from '../../../img/Body.png'
 
-const Body1 = () => {
+const FirstBlock = () => {
   return (
-    <div className="Body1">
+    <div className="FirstBlock">
       <div className="top-section">
         <img src={Body} alt="Imagen" className="centered-image" />
         <div className="text-container">
@@ -22,4 +22,4 @@ const Body1 = () => {
   );
 };
 
-export default Body1;
+export default FirstBlock;
