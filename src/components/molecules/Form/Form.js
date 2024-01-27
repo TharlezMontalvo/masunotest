@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Form.scss';
 import { FaUndo } from 'react-icons/fa';
-import subrayado from '../../img/Subrayado Azul.png'
-import sello from '../../img/Sello.png'
-import captcha from '../../img/captcha.jpg'
+import subrayado from '../../../img/Subrayado Azul.png'
+import sello from '../../../img/Sello.png'
+import captcha from '../../../img/captcha.jpg'
 
 const Form = () => {
   const [placeholders, setPlaceholders] = useState({

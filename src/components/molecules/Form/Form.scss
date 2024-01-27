@@ -125,4 +125,44 @@
         padding: 10px;
       }
   }
+
+  @media only screen and (max-width: 767px) {
+    padding: 15px; 
+    .form-container{
+      text-align: left;
+      align-items: center;
+    }
+    .form-row {
+      flex-direction: column; 
+      text-align: center;
+      .form-field{
+        text-align: center;
+      }
+    }
+  
+    .captcha-container {
+      flex-direction: column; 
+      align-items: flex-start;
+      .captcha-image{
+        margin-top: 10px;
+      }
+      .reload-button {
+        margin-top: 5px; 
+      }
+    }
+  
+    .register-button {
+      padding: 15px 40px;
+      font-size: 14px; 
+    }
+  
+    .offers-paragraph {
+      font-size: 14px;
+      padding: 5px 0; 
+    }
+
+    .checkbox-field {
+      font-size: 12px;
+    }
+  }
 }

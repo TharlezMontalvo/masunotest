@@ -1,9 +1,9 @@
 import React from 'react';
-import './Body3.scss'; 
+import './PreCarousel.scss'; 
 import logo2 from '../../../img/Logo2.png'
 import subrayado from '../../../img/Subrayado Rojo.png'
 
-const Body3 = () => {
+const PreCarousel = () => {
   return (
     <div className="body3">
     <header className="header">
@@ -24,4 +24,4 @@ const Body3 = () => {
   );
 }
 
-export default Body3;
+export default PreCarousel;

@@ -1,9 +1,9 @@
 import React from 'react';
-import './Anuncio.scss';
+import './Anunce.scss';
 import subrayado from '../../../img/Subrayado Rojo.png'
 
 
-const Anuncio = () => {
+const Anunce = () => {
   return (
     <div className="anuncio-container">
       <div className="second-container">
@@ -35,4 +35,4 @@ const Anuncio = () => {
   );
 };
 
-export default Anuncio;
+export default Anunce;

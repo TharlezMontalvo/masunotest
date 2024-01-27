@@ -1,5 +1,5 @@
 import React from 'react';
-import './Body1.scss';
+import './FirstBlock.scss';
 import subrayado from '../../../img/Subrayado Rojo.png'
 import Body from '../../../img/Body.png'
 
