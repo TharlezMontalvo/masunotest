@@ -42,7 +42,9 @@ const Step = () => {
             <img src={circle1} alt="Imagen del paso 1" />
           </div>
           <p className="step-text">Regístrate</p>
+          <div className="p-container">
           <p className="p-text">Completa el formulario con tus datos personales y acepta los términos.</p>
+          </div>
         </div>
 
         <div className="step">
@@ -51,7 +53,9 @@ const Step = () => {
             <img src={circle2} alt="Imagen del paso 2" />
           </div>
           <p className="step-text">Recibe un cupón</p>
+          <div className="p-container">
           <p className="p-text">Recibirás un correo electrónico donde podrás ver el cupón de descuento.</p>
+          </div>
         </div>
 
         <div className="step">
@@ -60,7 +64,9 @@ const Step = () => {
             <img src={circle3} alt="Imagen del paso 3" />
           </div>
           <p className="step-text">Empieza a ahorrar</p>
+          <div className="p-container">
           <p className="p-text">¡Y listo! Podrás usarlo del 28 al 30 de Marzo por compras en nuestra tienda online.</p>
+          </div>
         </div>
       </div>
     </animated.div>

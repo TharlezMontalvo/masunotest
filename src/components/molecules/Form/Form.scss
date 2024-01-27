@@ -43,8 +43,12 @@
       margin-bottom: 5px;
       text-align: left;
       color: #B7B1A9;
+      
     }
-
+    select{
+      background-color: white;
+      color: #B7B1A9;;
+    }
     input, select {
       width: 100%;
       padding: 8px;
@@ -89,6 +93,7 @@
     border-radius: 10px;
     cursor: pointer;
     font-size: 15px;
+    font-weight: bold;
   }
 
   .offers-paragraph{
