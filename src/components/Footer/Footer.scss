@@ -59,5 +59,12 @@
       text-align: center;
       margin-top: 20px;
     }
+
+    @media only screen and (min-width: 768px) {
+      /* Consulta de medios para pantallas más grandes (ajusta según sea necesario) */
+      .column {
+        flex: 0 0 calc(33.333% - 20px); /* Hace que cada columna ocupe alrededor de un tercio del ancho en pantallas más grandes */
+      }
+    }
   }
   

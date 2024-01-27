@@ -6,6 +6,7 @@ import Divider from '../Divider/Divider';
 import Body2 from '../Body2/Body2';
 import Body3 from '../Body3/Body3';
 import Carrusel from '../Carrusel/Carrusel';
+import Anuncio from '../Anuncio/Anuncio';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
      <Header />
      <body>
+      <Anuncio />
       <Form />
       <Divider />
       <Body2 />

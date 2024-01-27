@@ -1,0 +1,64 @@
+.anuncio-container {
+    background-color: white;
+    border: 2px dashed #003383;
+  
+    .fila {
+      width: 100%;
+    }
+  
+    .section {
+        margin: 0;
+    
+        .section-title {
+          color: #DB0FA8;
+          font-size: 50px;
+        }
+    
+        .section-image {
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+    .fila-3 {
+        display: flex;
+        height: 50%;
+      .columna {
+        flex: 1;
+      }
+      .izquierda {
+        text-align: center;
+        .porcentaje {
+          color: #DB0FA8;
+          text-shadow: 2px 2px 5px yellow;
+          font-size: 100px;
+        }
+      }
+      .derecha {
+        text-align: center;
+        font-size: 50px;
+        .cyber-days {
+          color: #DB0FA8;
+        }
+      }
+    }
+  
+    .fila-4,
+    .fila-5,
+    .fila-6 {
+      text-align: center;
+      color: #003383;
+    }
+  
+    .icono-tijera-rectangulo {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: #003383;
+      font-size: 24px;
+    }
+  
+
+  }
+  

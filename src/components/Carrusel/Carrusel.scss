@@ -3,14 +3,12 @@
     display: flex;
     overflow: hidden;
     width: 100%;
-    
   
     .carousel-container {
       display: flex;
       transition: transform 0.5s ease-in-out;
       width: 100%;
-      margin: 0;
-      padding: 0;
+      
     }
   
     .carousel-item {
@@ -113,5 +111,21 @@
         }
         }
     }
+    @media only screen and (max-width: 767px) {
+        .carousel-item {
+          flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+          align-items: center; /* Centra en pantallas pequeñas */
+          text-align: center; /* Centra el texto en pantallas pequeñas */
+        }
+        .column.left {
+            padding: 20px; /* Ajusta el relleno para pantallas pequeñas */
+          }
+          .column {
+            width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+          }
+        .slide-indicators {
+          justify-content: center; /* Alinea los indicadores a la izquierda en pantallas pequeñas */
+        }
+      }
   }
   
