@@ -3,12 +3,14 @@
     display: flex;
     overflow: hidden;
     width: 100%;
-    margin: 0;
+    
   
     .carousel-container {
       display: flex;
       transition: transform 0.5s ease-in-out;
       width: 100%;
+      margin: 0;
+      padding: 0;
     }
   
     .carousel-item {
@@ -25,8 +27,6 @@
         box-sizing: border-box;
         text-align: left;
         height: auto;
-
-        
   
         .slide-image {
           width: 100%;
@@ -36,6 +36,7 @@
   
         .text-content {
           padding: 20px;
+
           .star-image {
             width: 50px;
           }
@@ -90,5 +91,27 @@
     .hidden {
         display: none;
       }
+
+      
+    .slide-indicators {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+        padding: 15px;
+
+        .indicator {
+        width: 15px;
+        height: 15px;
+        background-color: #bababa;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+
+        &.active {
+            background-color: blue;
+        }
+        }
+    }
   }
   
